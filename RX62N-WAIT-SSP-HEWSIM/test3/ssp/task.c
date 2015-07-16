@@ -175,7 +175,7 @@ get_ipri(ID tskid)
 /*
  *  割込み発生回数を保存する変数
  */
-uint16_t	intnest;
+volatile  uint16_t	intnest;
 
 
 static const uint8_t bitmap_search_table[] = { 0U, 1U, 0U, 2U, 0U, 1U, 0U,
@@ -499,7 +499,7 @@ void isig_tim()
 {
 	int tskid;
 
-	t_lock_cpu();
+	i_lock_cpu();
 
 	for(tskid = 0 ; tskid < TNUM_TSKID; tskid++)
 	{
@@ -513,7 +513,7 @@ void isig_tim()
 			}
 		}
 	}
-	t_unlock_cpu();
+	i_unlock_cpu();
 }
 
 #define MAXTOUT 0xfffffffe
@@ -560,3 +560,31 @@ dly_tsk(RELTIM dlytim)
 	return(ercd);
 }
 
+void handler(INTHDR userhandler)
+{
+	intptr_t newtskipi;
+	
+	intnest++;						//割り込みネスト数インクリメント
+	i_unlock_cpu();					//割り込み許可
+	(*userhandler)();				//ユーザーハンドラ呼び出し
+	i_lock_cpu();					//割り込み不可
+	intnest--;						//割り込みネスト数デクリメント
+
+	if (intnest == 0)				//多重割り込み中でない
+	{
+		if (reqflg !=0)				//スケジュール必要
+		{
+			reqflg = 0;
+			newtskipi = search_schedtsk();			//次にディスパッチされるタスクID
+			if ((last_ipri != 0xff) && (last_ipri != newtskipi))
+			{
+				if (setjmp(task_ctx[last_ipri]) != 0)
+				{
+					// タスク復帰した場合
+					return;				//割り込み復帰
+				}	
+			}
+			dispatch(newtskipi);	//これはリターンしない
+		}
+	}
+}

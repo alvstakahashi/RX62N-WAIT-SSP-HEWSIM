@@ -7,9 +7,19 @@
 [GENERAL_DATA]
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
-"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\target_kernel.h" 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\intprg.c" 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\ssp\startup.c" 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task.c" 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\test3.c" 
 [WORKSPACE_FILE_STATES]
-"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" 0 0 569 222 0 0 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\target_kernel.h" 0 0 860 367 0 3 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\intprg.c" 26 26 740 224 0 5 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" 52 52 762 205 0 0 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\ssp\startup.c" 0 0 740 224 0 4 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task.c" -8 -31 860 367 1 1 
+"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\test3.c" 0 0 766 209 0 2 
 [LOADED_PROJECTS]
 "test3" 
 [END]

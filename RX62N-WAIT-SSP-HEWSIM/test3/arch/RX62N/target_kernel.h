@@ -93,7 +93,12 @@ disint( void )
 	clrpsw	i
 }
 
-
+#pragma inline_asm	ipl_maskClear
+static void 
+ipl_maskClear(void)
+{
+	MVTIPL	#0
+}
 /*
  *  NMI‚ğœ‚­‚·‚×‚Ä‚ÌŠ„‚İ‚Ì‹–‰Â
  */
@@ -164,6 +169,7 @@ static  void
 idle_loop(void)
 {
 	t_unlock_cpu();
+	ipl_maskClear();
 	t_lock_cpu();
 }
 

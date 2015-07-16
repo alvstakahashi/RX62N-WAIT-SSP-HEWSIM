@@ -96,8 +96,8 @@ void Excep_FCU_FRDYI(void);
 void Excep_ICU_SWINT(void);
 
 // CMTU0_CMT0
-//#pragma interrupt (Excep_CMTU0_CMT0(vect=28))
-//void Excep_CMTU0_CMT0(void);
+#pragma interrupt (Excep_CMTU0_CMT0(vect=28))
+void Excep_CMTU0_CMT0(void);
 
 // CMTU0_CMT1
 #pragma interrupt (Excep_CMTU0_CMT1(vect=29))

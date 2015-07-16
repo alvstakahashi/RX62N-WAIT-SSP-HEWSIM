@@ -31,7 +31,7 @@
 #undef primap_set
 #undef primap_clear
 #undef bitmap_search
-
+#undef handler
 /*
  *  time_event.c
  */

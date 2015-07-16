@@ -84,6 +84,9 @@ void CMI0(void)							// Interrupt Function
 	iact_tsk(TASK2_ID);
 }
 
+void task3(void)
+{}
+
 
 #ifdef __cplusplus
 void abort(void)

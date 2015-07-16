@@ -60,8 +60,40 @@ void Excep_FCU_FRDYI(void){ }
 // ICU_SWINT
 void Excep_ICU_SWINT(void){ }
 
+typedef void	(*INTHDR)(void);
+
+extern void handler(INTHDR userhandler);
+extern void CMI0(void);
+
+#pragma inline_asm	reg_save
+static void
+reg_save( void )
+{
+	pushm	R6-R13
+	pushc	fpsw						; FPUステータスレジスタ退避
+	mvfacmi	r5
+	shll	#16, r5						; ACC最下位16bitは0とする
+	mvfachi	r4
+	pushm	r4-r5						; アキュムレータ退避
+}
+#pragma inline_asm	reg_load
+static void
+reg_load( void )
+{
+	popm	r4-r5						; アキュムレータ復帰
+	mvtaclo	r5							; ACC最下位16bitは0で復帰
+	mvtachi	r4
+	popc	fpsw						; FPUステータスレジスタ復帰
+	popm	R6-R13
+}
+
 // CMTU0_CMT0
-void Excep_CMTU0_CMT0(void){ }
+void Excep_CMTU0_CMT0(void)
+{ 
+	reg_save();
+	_kernel_handler(CMI0);
+	reg_load();
+}
 
 // CMTU0_CMT1
 void Excep_CMTU0_CMT1(void){ }
