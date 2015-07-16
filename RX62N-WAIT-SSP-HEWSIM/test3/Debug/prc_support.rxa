@@ -1,0 +1,8 @@
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\prc_support.src"
+-cpu=rx600
+-include="D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\include"
+-include="D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp"
+-include="D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N"
+-debug
+-output="D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\Debug\prc_support.obj"
+-nologo

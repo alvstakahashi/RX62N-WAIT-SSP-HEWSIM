@@ -1,0 +1,279 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"2.8" 
+[PROJECT_DETAILS]
+"test3" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\test3.hwp" "RX" "Renesas RX Standard" "Application" "RX600" "RX62N" 
+[INFORMATION]
+"プロジェクト情報がありません" 
+[TOOL_CHAIN]
+"Renesas RX Standard Toolchain" "1.2.1.0" 
+[CONFIGURATIONS]
+"Debug" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\Debug" 
+"Release" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\Release" 
+"SimDebug_RX600" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\SimDebug_RX600" 
+[BUILD_PHASES]
+"Renesas OptLinker" 1 
+"Renesas RX Assembler" 1 
+"Renesas RX C/C++ Compiler" 1 
+"Renesas RX C/C++ Library Generator" 1 
+"Renesas RX Configurator" 1 
+[TOOL_ENVIRONMENT]
+[EXTENSIONS]
+"Absolute file" "ABS" 
+"Assembly include file" "INC" 
+"Assembly list file" "LST" 
+"Assembly source file" "S" 
+"Assembly source file" "SRC" 
+"Binary file" "BIN" 
+"C header file" "H" 
+"C source file" "C" 
+"C++ header file" "HPP" 
+"C++ source file" "CC" 
+"C++ source file" "CP" 
+"C++ source file" "CPP" 
+"CPU information file" "CPU" 
+"Calling information file" "CAL" 
+"Configuration file" "CFG" 
+"Debug information file" "DBG" 
+"Hex file" "HEX" 
+"Library file" "LIB" 
+"Library information file" "LBP" 
+"Linkage map file" "MAP" 
+"Linkage symbol file" "FSY" 
+"Object file" "OBJ" 
+"Optimize map file" "bls" 
+"Preprocessed C source file" "P" 
+"Preprocessed C++ source file" "PP" 
+"Relocatable file" "REL" 
+"Rts information file" "RTS" 
+"S-Record file" "MOT" 
+"Stack information file" "SNI" 
+"TD include object file" "RTI" 
+[FILE_GROUPS]
+"Absolute file" "BIN" "NONE" "" 
+"Assembly include file" "TEXT" "EDITOR" "" 
+"Assembly list file" "TEXT" "EDITOR" "" 
+"Assembly source file" "TEXT" "EDITOR" "" 
+"Binary file" "BIN" "NONE" "" 
+"C header file" "TEXT" "EDITOR" "" 
+"C source file" "TEXT" "EDITOR" "" 
+"C++ header file" "TEXT" "EDITOR" "" 
+"C++ source file" "TEXT" "EDITOR" "" 
+"CPU information file" "BIN" "NONE" "" 
+"Calling information file" "BIN" "NONE" "" 
+"Configuration file" "TEXT" "EDITOR" "" 
+"Debug information file" "BIN" "NONE" "" 
+"Hex file" "TEXT" "EDITOR" "" 
+"Library file" "BIN" "NONE" "" 
+"Library information file" "TEXT" "EDITOR" "" 
+"Linkage map file" "TEXT" "EDITOR" "" 
+"Linkage symbol file" "TEXT" "EDITOR" "" 
+"Object file" "BIN" "NONE" "" 
+"Optimize map file" "BIN" "NONE" "" 
+"Preprocessed C source file" "TEXT" "EDITOR" "" 
+"Preprocessed C++ source file" "TEXT" "EDITOR" "" 
+"Relocatable file" "BIN" "NONE" "" 
+"Rts information file" "BIN" "NONE" "" 
+"S-Record file" "TEXT" "EDITOR" "" 
+"Stack information file" "BIN" "NONE" "" 
+"TD include object file" "BIN" "NONE" "" 
+[ASSOCIATED_APPLICATIONS]
+[TOOLCHAIN_PHASE]
+"Renesas OptLinker" 
+"Renesas RX Assembler" 
+"Renesas RX C/C++ Compiler" 
+"Renesas RX C/C++ Library Generator" 
+"Renesas RX Configurator" 
+[UTILITY_PHASE]
+[CUSTOM_PHASES]
+[CUSTOM_PHASE_INPUT_GROUP]
+[CUSTOM_PHASE_OUTPUT_SYNTAX]
+[BUILD_ORDER]
+"Renesas RX C/C++ Library Generator" 1 
+"Renesas RX C/C++ Compiler" 1 
+"Renesas RX Assembler" 1 
+"Renesas OptLinker" 1 
+"Renesas RX Configurator" 0 
+[BUILD_PHASE_DETAILS]
+"Renesas OptLinker" "Object file|Library file|Relocatable file" 0 
+"Renesas RX Assembler" "Assembly source file|Linkage symbol file" 1 
+"Renesas RX C/C++ Compiler" "C source file|C++ source file" 1 
+"Renesas RX C/C++ Library Generator" "" 0 
+"Renesas RX Configurator" "Configuration file" 0 
+[BUILD_FILE_ORDER_Assembly source file]
+"Renesas RX Assembler" 1 
+[BUILD_FILE_ORDER_C source file]
+"Renesas RX C/C++ Compiler" 1 
+[BUILD_FILE_ORDER_C++ source file]
+"Renesas RX C/C++ Compiler" 1 
+[BUILD_FILE_ORDER_Linkage symbol file]
+"Renesas RX Assembler" 1 
+[SCRAP]
+"Project Generator Setup File" "" 
+[MAPPINGS]
+"Assembly source file" "Renesas RX Assembler" "Renesas RX C/C++ Compiler" 
+"Library file" "Renesas OptLinker" "Renesas RX C/C++ Library Generator" 
+"Object file" "Renesas OptLinker" "Renesas RX Assembler" 
+"Object file" "Renesas OptLinker" "Renesas RX C/C++ Compiler" 
+[PROJECT_FILES]
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\prc_support.src" "User" "Assembly source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\dbsct.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\intprg.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowlvl.src" "User" "Assembly source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowsrc.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\sbrk.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\kernel_cfg.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\startup.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task_manage.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\test3.c" "User" "C source file" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\vecttbl.c" "User" "C source file" 2 
+[FOLDER]
+"Assembly source file" "Assembly source file" 
+"C source file" "C source file" 
+[GENERAL_DATA_PROJECT]
+"USE_CUSTOM_LINKAGE_ORDER" "0" 
+[ON_DEMAND_COMPONENTS_LOADED]
+[SYNC_SESSION_NAMES]
+[SESSIONS]
+"DefaultSession" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\DefaultSession.hsf" 0 
+"SimSessionRX600" "D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\SimSessionRX600.hsf" 0 
+[GENERAL_DATA_SESSION_DefaultSession]
+[GENERAL_DATA_SESSION_SimSessionRX600]
+[OPTIONS_Debug_Renesas OptLinker]
+"Single Shot" "0143b0237efb0d10" 5 
+[OPTIONS_Debug_Renesas RX Assembler]
+"Assembly source file" "0bdcb2417efb0d10" 4 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\prc_support.src" "0d5b50237efb0d10" 4 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowlvl.src" "0bdcb2417efb0d10" 4 
+"Linkage symbol file" "0bdcb2417efb0d10" 4 
+[OPTIONS_Debug_Renesas RX C/C++ Compiler]
+"C source file" "0bdcb2417efb0d10" 2 
+"C++ source file" "0bdcb2417efb0d10" 3 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\dbsct.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\intprg.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowsrc.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\sbrk.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\kernel_cfg.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\startup.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task_manage.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\test3.c" "0bdcb2417efb0d10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\vecttbl.c" "0bdcb2417efb0d10" 2 
+[OPTIONS_Debug_Renesas RX C/C++ Library Generator]
+"Single Shot" "0f4fa1077909fc10" 1 
+[OPTIONS_Debug_Renesas RX Configurator]
+"Single Shot" "0d5b50237efb0d10" 6 
+[OPTIONS_Debug]
+"" 0 
+"[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 6 
+"[V|VERSION|1] [B|SJIS|1] [S|INCLUDE|^"$(WORKSPDIR)\test3\include^"|^"$(WORKSPDIR)\test3\ssp^"|^"$(WORKSPDIR)\test3\arch\RX62N^"] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 4 
+"[V|VERSION|1] [S|LANG|CPP] [B|SJIS|1] [S|INCLUDE|^"$(WORKSPDIR)\test3\include^"|^"$(WORKSPDIR)\test3\ssp^"|^"$(WORKSPDIR)\test3\arch\RX62N^"] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|DEBUG|1] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 3 
+"[V|VERSION|1] [S|LANG|C] [B|SJIS|1] [S|INCLUDE|^"$(WORKSPDIR)\test3\include^"|^"$(WORKSPDIR)\test3\ssp^"|^"$(WORKSPDIR)\test3\arch\RX62N^"] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|DEBUG|1] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 2 
+"[V|VERSION|6] [S|PRELINK|SKIP] [S|FORM|STYPE] [S|BYTE_COUNT_VALUE|FF] [B|DEBUG|1] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|CRC|NONE|DEFAULT|00000000] [S|VECTN|28=__kernel_default_int_handler_entry] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|SHOW|METHODCUSTOM|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [I|SPACE|^"FF^"] [B|OPTIMIZE|0] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(01000)|PResetPRG(0FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(0FFFF8100)|FIXEDVECT(0FFFFFFD0)] [S|MEMORY|HIGH]
+" 5 
+[EXCLUDED_FILES_Debug]
+[LINKAGE_ORDER_Debug]
+[GENERAL_DATA_CONFIGURATION_Debug]
+[OPTIONS_Release_Renesas OptLinker]
+"Single Shot" "0143b0237efb0d10" 5 
+[OPTIONS_Release_Renesas RX Assembler]
+"Assembly source file" "0f4fa1077909fc10" 4 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\prc_support.src" "0d5b50237efb0d10" 4 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowlvl.src" "0f4fa1077909fc10" 4 
+"Linkage symbol file" "0f4fa1077909fc10" 4 
+[OPTIONS_Release_Renesas RX C/C++ Compiler]
+"C source file" "0f4fa1077909fc10" 2 
+"C++ source file" "034ccdbb8909fc10" 3 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\dbsct.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\intprg.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowsrc.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\sbrk.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\kernel_cfg.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\startup.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task_manage.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\test3.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\vecttbl.c" "0f4fa1077909fc10" 2 
+[OPTIONS_Release_Renesas RX C/C++ Library Generator]
+"Single Shot" "0f4fa1077909fc10" 1 
+[OPTIONS_Release_Renesas RX Configurator]
+"Single Shot" "0d5b50237efb0d10" 6 
+[OPTIONS_Release]
+"" 0 
+"[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 6 
+"[V|VERSION|1] [B|DEBUG|0] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 4 
+"[V|VERSION|1] [B|DEBUG|0] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 2 
+"[V|VERSION|1] [S|LANG|CPP] [B|SJIS|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 3 
+"[V|VERSION|6] [B|DEBUG|0] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"]  [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)]" 5 
+[EXCLUDED_FILES_Release]
+[LINKAGE_ORDER_Release]
+[GENERAL_DATA_CONFIGURATION_Release]
+[OPTIONS_SimDebug_RX600_Renesas OptLinker]
+"Single Shot" "0143b0237efb0d10" 5 
+[OPTIONS_SimDebug_RX600_Renesas RX Assembler]
+"Assembly source file" "0f4fa1077909fc10" 4 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N\prc_support.src" "0d5b50237efb0d10" 4 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowlvl.src" "0f4fa1077909fc10" 4 
+"Linkage symbol file" "0f4fa1077909fc10" 4 
+[OPTIONS_SimDebug_RX600_Renesas RX C/C++ Compiler]
+"C source file" "0f4fa1077909fc10" 2 
+"C++ source file" "034ccdbb8909fc10" 3 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\dbsct.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\intprg.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\lowsrc.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\resetprg.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\sbrk.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\kernel_cfg.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\startup.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\ssp\task_manage.c" "06dd191d8909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\test3.c" "0f4fa1077909fc10" 2 
+"D:\usr\github\WAIT-SSP-HOME\work\atsumeru\SF-20140625\SSP-LESSEN\RX62N-WAIT-SSP-HEWSIM\test3\vecttbl.c" "0f4fa1077909fc10" 2 
+[OPTIONS_SimDebug_RX600_Renesas RX C/C++ Library Generator]
+"Single Shot" "0f4fa1077909fc10" 1 
+[OPTIONS_SimDebug_RX600_Renesas RX Configurator]
+"Single Shot" "0d5b50237efb0d10" 6 
+[OPTIONS_SimDebug_RX600]
+"" 0 
+"[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 6 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 4 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 2 
+"[V|VERSION|1] [S|LANG|CPP] [B|SJIS|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|DEBUG|1] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 3 
+"[V|VERSION|6] [B|DEBUG|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"]  [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)]" 5 
+[EXCLUDED_FILES_SimDebug_RX600]
+[LINKAGE_ORDER_SimDebug_RX600]
+[GENERAL_DATA_CONFIGURATION_SimDebug_RX600]
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_SimSessionRX600]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_SimSessionRX600]
+"MEMORY_MAPPING_OPTIONS" "[V|VERSION|1] [S|CPUTYPE|^"RX62N (RX600)^"] [S|MAP|^"0x00000000,0x00017FFF,RAM,64,0101,2 0x00080000,0x000FFFFF,I/O,32,0101,2 0x00100000,0x00107FFF,ROM,32,0101,2 0x007F8000,0x007F9FFF,RAM,32,0101,2 0x007FC000,0x007FC4FF,I/O,32,0101,2 0x007FFC00,0x007FFFFF,I/O,32,0101,2 0x00F80000,0x00FFFFFF,ROM,32,0101,2 0xFEFFE000,0xFEFFFFFF,ROM,32,0101,2 0xFF7FC000,0xFF80BFFF,ROM,32,0101,2 0xFFF80000,0xFFFFFFFF,ROM,64,0101,2^"] [S|RESOURCE|^"0x00000000,0x00017FFF,R/W 0x00080000,0x000FFFFF,R/W 0x007FC000,0x007FC4FF,R/W 0x007FFC00,0x007FFFFF,R/W 0xFFF80000,0xFFFFFFFF,R^"] [B|SIMIOF|1] [I|SIMIOADR|0x0] [I|BUS_MODE|0] [S|ENDIAN|^"LITTLE^"] [S|PATCH|^"OFF^"]" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Release_SimSessionRX600]
+[SESSION_DATA_CONFIGURATION_SESSION_Release_SimSessionRX600]
+"MEMORY_MAPPING_OPTIONS" "[V|VERSION|1] [S|CPUTYPE|^"RX62N (RX600)^"] [S|MAP|^"0x00000000,0x00017FFF,RAM,64,0101,2 0x00080000,0x000FFFFF,I/O,32,0101,2 0x00100000,0x00107FFF,ROM,32,0101,2 0x007F8000,0x007F9FFF,RAM,32,0101,2 0x007FC000,0x007FC4FF,I/O,32,0101,2 0x007FFC00,0x007FFFFF,I/O,32,0101,2 0x00F80000,0x00FFFFFF,ROM,32,0101,2 0xFEFFE000,0xFEFFFFFF,ROM,32,0101,2 0xFF7FC000,0xFF80BFFF,ROM,32,0101,2 0xFFF80000,0xFFFFFFFF,ROM,64,0101,2^"] [S|RESOURCE|^"0x00000000,0x00017FFF,R/W 0x00080000,0x000FFFFF,R/W 0x007FC000,0x007FC4FF,R/W 0x007FFC00,0x007FFFFF,R/W 0xFFF80000,0xFFFFFFFF,R^"] [B|SIMIOF|1] [I|SIMIOADR|0x0] [I|BUS_MODE|0] [S|ENDIAN|^"LITTLE^"] [S|PATCH|^"OFF^"]" 
+[GENERAL_DATA_CONFIGURATION_SESSION_SimDebug_RX600_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_SimDebug_RX600_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_SimDebug_RX600_SimSessionRX600]
+[SESSION_DATA_CONFIGURATION_SESSION_SimDebug_RX600_SimSessionRX600]
+"MEMORY_MAPPING_OPTIONS" "[V|VERSION|1] [S|CPUTYPE|^"RX62N (RX600)^"] [S|MAP|^"0x00000000,0x00017FFF,RAM,64,0101,2 0x00080000,0x000FFFFF,I/O,32,0101,2 0x00100000,0x00107FFF,ROM,32,0101,2 0x007F8000,0x007F9FFF,RAM,32,0101,2 0x007FC000,0x007FC4FF,I/O,32,0101,2 0x007FFC00,0x007FFFFF,I/O,32,0101,2 0x00F80000,0x00FFFFFF,ROM,32,0101,2 0xFEFFE000,0xFEFFFFFF,ROM,32,0101,2 0xFF7FC000,0xFF80BFFF,ROM,32,0101,2 0xFFF80000,0xFFFFFFFF,ROM,64,0101,2^"] [S|RESOURCE|^"0x00000000,0x00017FFF,R/W 0x00080000,0x000FFFFF,R/W 0x007FC000,0x007FC4FF,R/W 0x007FFC00,0x007FFFFF,R/W 0xFFF80000,0xFFFFFFFF,R^"] [B|SIMIOF|1] [I|SIMIOADR|0x0] [I|BUS_MODE|0] [S|ENDIAN|^"LITTLE^"] [S|PATCH|^"OFF^"]" 
+[EXT_DEBUGGER_INFO]
+0 "" "" "" "" 
+[END]
