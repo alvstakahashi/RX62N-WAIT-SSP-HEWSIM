@@ -296,6 +296,7 @@ initialize_task(void)
 			make_ctx(ipri);
 		}
 		task_wait[ipri] = 0;
+		tskTout[ipri] = 0;
 	}
 	/* 割込み禁止フラグの初期化 */
 	disdsp = false;
@@ -308,15 +309,25 @@ initialize_task(void)
  */
 static jmp_buf jmpp;		//このルーチンのセーブ用
  
-void make_ctx(uint_t ipri)
+void make_ctx(uint_t ipri_prm)
 {
+	intptr_t debugtemp = 0;
+	uint_t ipri = ipri_prm;
+	intptr_t task_stackadr;
 	t_lock_cpu();
-//	printf("make_ctx ipri= %d\n",ipri);
 	if (setjmp(jmpp) == 0)	//ここに戻り用
 	{
 		//続き
 		// タスクスタックに切り替える
-		set_task_stack(TOPPERS_TASKSTKPT(ipri ));
+		task_stackadr = TOPPERS_TASKSTKPT(ipri);
+		set_task_stack(task_stackadr);
+#if 0
+		__asm__( "mov sp,%[Rs1]"
+				 ::[Rs1]"r"(task_stackadr));
+		__asm__("mov   %[Rd],sp"
+				:[Rd]"=r"(debugtemp));
+		printf("stack data = %08x\n",debugtemp);
+#endif		
 		if (setjmp(task_ctx[ipri]) == 0)
 		{
 			/*登録した場合*/
@@ -324,6 +335,7 @@ void make_ctx(uint_t ipri)
 		}
 		else
 		{
+			ipri = runtsk_ipri;			//longjmpで戻って来た時は不定
 			/* タスク起動時 */
 			t_unlock_cpu();
 			/* タスクに来ました*/
@@ -332,7 +344,6 @@ void make_ctx(uint_t ipri)
 			disdsp = false;
 			/* ビットマップクリア． */
 			primap_clear(ipri);
-			
 			//タスクが終わった場合どうするのか？--> このあとは　dispacher()に行く
 			longjmp(disp_ctx,1);			//sta_kerの続きに行く
 		}
@@ -394,7 +405,7 @@ run_task(uint_t ipri)
 void dispatch(intptr_t ipri)
 {
 	last_ipri = ipri;
-;	runtsk_ipri = ipri;
+	runtsk_ipri = ipri;
 	longjmp(task_ctx[ipri],1);
 }
 

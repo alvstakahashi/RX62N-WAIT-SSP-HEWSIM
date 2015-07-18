@@ -3,12 +3,12 @@
 [DATABASE_VERSION]
 "11.0" 
 [WORKSPACE_DETAILS]
-"test3" "D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM" "D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3.hws" "RX" "Renesas RX Standard" 
+"test3" "D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM" "D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3.hws" "RX" "Renesas RX Standard" 
 [SHARED_WORKSPACE_CONTROL_STATUS]
 "" "" "" 
 "" "" "" 
 [PROJECTS]
-"test3" "D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3" "D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\test3.hwp" 0 
+"test3" "D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3" "D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3\test3.hwp" 0 
 [INFORMATION]
 "ワークスペース情報がありません" 
 [SCRAP]

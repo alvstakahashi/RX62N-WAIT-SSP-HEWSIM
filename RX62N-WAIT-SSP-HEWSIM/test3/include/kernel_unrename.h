@@ -32,6 +32,7 @@
 #undef primap_clear
 #undef bitmap_search
 #undef handler
+#undef intnest
 /*
  *  time_event.c
  */

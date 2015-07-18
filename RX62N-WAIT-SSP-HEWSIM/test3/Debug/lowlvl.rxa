@@ -1,8 +1,8 @@
-"D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\lowlvl.src"
+"D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3\lowlvl.src"
 -cpu=rx600
--include="D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\include"
--include="D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\ssp"
--include="D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N"
+-include="D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3\include"
+-include="D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3\ssp"
+-include="D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3\arch\RX62N"
 -debug
--output="D:\usr\github\WAIT-SSP-HOME\work\RX62N-WAIT-SSP-HEWSIM\test3\Debug\lowlvl.obj"
+-output="D:\usr\github\clone\RX62N-WAIT-SSP-HEWSIM\RX62N-WAIT-SSP-HEWSIM\test3\Debug\lowlvl.obj"
 -nologo

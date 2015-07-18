@@ -31,6 +31,7 @@
 #define primap_clear				_kernel_primap_clear
 #define bitmap_search				_kernel_bitmap_search
 #define	handler						_kernel_handler
+#define	intnest						_kernel_intnest
 /*
  *  time_event.c
  */
