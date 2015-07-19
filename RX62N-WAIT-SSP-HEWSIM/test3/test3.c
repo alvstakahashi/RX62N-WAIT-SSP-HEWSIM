@@ -38,12 +38,10 @@ void abort(void);
 
 int flag;
 
-void main(intptr_t arg)
+void setup()
 {
 
-	printf("hello");
 
-	flag = 0;
 
 	PORT1.DDR.BIT.B5 = 1;				// P15 is Output
 	MSTP( CMT0 ) = 0;					// Wakeup CMT0,CMT1
@@ -55,14 +53,16 @@ void main(intptr_t arg)
 //	set_psw( 0x00010000 );				// Set I=1, IPL=0 of PSW
 	CMT.CMSTR0.BIT.STR0 = 1;			// Start CMT0
 	
-	act_tsk(TASK2_ID);
-	for(;;)
-	{
-		printf("task1-----------------\n");
-		dly_tsk(1000);
-
-	}
 }
+void main(intptr_t arg)
+{
+	printf("main here\n");
+	setup();
+	act_tsk(TASK3_ID);
+	act_tsk(TASK2_ID);	
+	printf("main end\n");
+}
+
 void task2(intptr_t arg)
 {
 	for(;;)
@@ -82,7 +82,14 @@ void CMI0(void)							// Interrupt Function
 }
 
 void task3(void)
-{}
+{
+	volatile int count = 0;
+	printf("task3-----------------\n");
+	for(;;)
+	{
+		count++;
+	}
+}
 
 
 #ifdef __cplusplus
