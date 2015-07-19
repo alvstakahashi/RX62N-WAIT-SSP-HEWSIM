@@ -40,7 +40,7 @@
  */
 #include <stddef.h>
 #include <limits.h>
-
+#include <stdio.h>
 
 #include "kernel_impl.h"
 #include "task.h"
@@ -569,7 +569,7 @@ dly_tsk(RELTIM dlytim)
 		// タスク復帰した場合
 		ipl_maskClear();
 		t_unlock_cpu();
-#if 1
+#if 0
 		printf("dly_tsk End\n");
 #endif
 		return(ercd);
