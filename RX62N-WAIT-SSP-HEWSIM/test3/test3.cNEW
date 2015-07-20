@@ -38,54 +38,57 @@ void abort(void);
 
 int flag;
 
-void main(intptr_t arg)
+void setup()
 {
 
-	printf("hello");
 
-	flag = 0;
 
 	PORT1.DDR.BIT.B5 = 1;				// P15 is Output
 	MSTP( CMT0 ) = 0;					// Wakeup CMT0,CMT1
-	CMT0.CMCOR = 48000000/512/2 - 1;	// CMCOR is 500ms Count 
+//	CMT0.CMCOR = 48000000/512/2 - 1;	// CMCOR is 500ms Count 
+	CMT0.CMCOR = 48000000/512/2/500 - 1;	// CMCOR is 1ms Count 
 	CMT0.CMCR.WORD = 0x0043;			// CMIE is Enable,CKS is PCLK/512
 	IEN( CMT0, CMI0 ) = 1;				// CMI0 Enable
 	IPR( CMT0, CMI0 ) = 1;				// CMI0 Interrupt Level is 1
 //	set_psw( 0x00010000 );				// Set I=1, IPL=0 of PSW
 	CMT.CMSTR0.BIT.STR0 = 1;			// Start CMT0
-	for(;;)
-	{
-		if (flag)
-		{
-			printf("task1---flag here-------------------------------------------\n");
-			go_tsk(TASK2_ID);
-			
-		}
-	}
+	
 }
+void main(intptr_t arg)
+{
+	printf("main here\n");
+	setup();
+	act_tsk(TASK3_ID);
+	act_tsk(TASK2_ID);	
+	printf("main end\n");
+}
+
 void task2(intptr_t arg)
 {
-	printf("task2\n");
-	flag = 1;
-	printf("task2 flag =1\n");
-	printf("task2 wait\n");
-	wai_tsk();
-	printf("task2 wakeup\n");
-	flag = 0;
-	printf("task2 flag =0\n");
-	printf("task2 end\n");
+	for(;;)
+	{
+		printf("task2*****************************************\n");
+		dly_tsk(500);
+	}
 }
 
 
 void CMI0(void)							// Interrupt Function
 {										// Multiple Interrupt Enable
-	PORT1.DR.BIT.B5 ^= 1;				// Reverse P15(LED)
-//		CMT.CMSTR0.BIT.STR0 = 0;			// Start CMT0
-	iact_tsk(TASK2_ID);
+//	PORT1.DR.BIT.B5 ^= 1;				// Reverse P15(LED)
+////		CMT.CMSTR0.BIT.STR0 = 0;			// Start CMT0
+//	iact_tsk(TASK2_ID);
+	isig_tim();
 }
 
 void task3(void)
-{}
+{
+	for(;;)
+	{
+		printf("task3-------------------------\n");
+		dly_tsk(300);
+	}
+}
 
 
 #ifdef __cplusplus

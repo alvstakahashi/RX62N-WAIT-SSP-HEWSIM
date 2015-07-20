@@ -37,6 +37,7 @@ void abort(void);
 //}
 
 int flag;
+volatile int count = 0;
 
 void setup()
 {
@@ -67,7 +68,7 @@ void task2(intptr_t arg)
 {
 	for(;;)
 	{
-		printf("task2-------------------------\n");
+		printf("task2 count = %d\n",count);
 		dly_tsk(500);
 	}
 }
@@ -83,7 +84,6 @@ void CMI0(void)							// Interrupt Function
 
 void task3(void)
 {
-	volatile int count = 0;
 	printf("task3-----------------\n");
 	for(;;)
 	{
